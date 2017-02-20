@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,8 +17,63 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.rent.sdacourseapplication.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+
 </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_gravity="start"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/rysowanie"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:text="Rysowanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/granie"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:text="REFLEX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/flaga"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:text="FLAGA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_gravity="end"
+        android:layout_height="match_parent"></LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

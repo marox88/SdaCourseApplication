@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+<LinearLayout
+
+
+    android:background="@android:color/darker_gray"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10"
+
+    tools:context="com.example.rent.flaga.FlagaActivity"
+
+    >
+
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:layout_weight="0.5"
+
+    />
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_red_light"
+        android:layout_weight="0.5"
+         />
+
+
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="271dp"
+        android:layout_height="333dp"
+        android:src="@drawable/orzel"
+        android:layout_gravity="center"
+
+        android:id="@+id/imageView" />
+
+</FrameLayout>
