@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/clear_menu"
         android:title="clear"
         android:showAsAction="never"/>
+
+    <item android:id="@+id/save"
+        android:title="SAVE"
+        app:showAsAction="never"
+        ></item>
+
+    <item android:id="@+id/drawing_gallery"
+        android:title="Drawing gallery"
+        app:showAsAction="never"/>
+
 </menu>
