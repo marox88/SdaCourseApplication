@@ -4,8 +4,10 @@
 
     <item
         android:id="@+id/clear_menu"
-        android:title="clear"
-        android:showAsAction="never"/>
+        android:title="Clear"
+        android:icon="@drawable/ic_clear_image"
+        app:showAsAction="always"
+        />
 
     <item android:id="@+id/save"
         android:title="SAVE"
