@@ -42,6 +42,9 @@ public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.MyView
         notifyDataSetChanged();
     }
 
+    public void deleteAllCheckedItems() {
+    }
+
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView textView;
