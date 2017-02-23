@@ -10,6 +10,11 @@ public class TodoListItem {
     private String text;
     private boolean isChecked;
 
+    public TodoListItem (String text) {
+        this.text = text;
+    }
+
+
 
     public void setText(String text) {
         this.text = text;
