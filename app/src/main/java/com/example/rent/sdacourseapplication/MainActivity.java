@@ -2,6 +2,7 @@ package com.example.rent.sdacourseapplication;
 
 import android.content.Intent;
 import android.support.annotation.Nullable;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.example.rent.sdacourseapplication.drawing.DrawingActivity;
 import com.example.rent.sdacourseapplication.flaga.FlagaActivity;
 import com.example.rent.sdacourseapplication.game.GameActivity;
+import com.example.rent.sdacourseapplication.todo.ToDoListActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView textView4 = (TextView) findViewById(R.id.todo_list_application);
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this, ToDoListActivity.class);
+                startActivity(intent);
+            }
+        });
         
     }
 
@@ -73,10 +83,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home: {
-                if(drawerLayout.isDrawerOpen(Gravity.START)) {
-                    drawerLayout.closeDrawer(Gravity.START);
+                if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                    drawerLayout.closeDrawer(GravityCompat.START);
                 } else {
-                    drawerLayout.openDrawer(Gravity.START);
+                    drawerLayout.openDrawer(GravityCompat.START);
                 }
                 break;
             }

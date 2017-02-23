@@ -23,6 +23,9 @@
         <activity android:name=".flaga.FlagaActivity"></activity>
         <activity android:name=".gallery.GalleryActivity"
             android:label="GALERIA"></activity>
+        <activity android:name=".todo.ToDoListActivity"
+            android:label="LISTA ZAKUPÓW">
+        </activity>
 
     </application>
 
