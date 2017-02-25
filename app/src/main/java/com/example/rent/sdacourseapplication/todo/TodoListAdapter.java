@@ -13,16 +13,16 @@ import com.example.rent.sdacourseapplication.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by RENT on 2017-02-22.
- */
+
 
 public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.MyViewHolder> {
 
 
     private List<TodoListItem> items = new ArrayList<>();
 
-
+    public TodoListAdapter(List<TodoListItem> items) {
+        this.items = items;
+    }
 
     private OnItemCheckStateChanged checkListener;
 
@@ -42,6 +42,7 @@ public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.MyView
 
         final TodoListItem listItem = items.get(position);
         holder.textView.setText(items.get(position).getText());
+        holder.checkbox.setOnCheckedChangeListener(null);
         holder.checkbox.setChecked(listItem.isChecked());
         holder.checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -96,6 +97,7 @@ public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.MyView
 
 
 
+
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView textView;
@@ -108,7 +110,12 @@ public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.MyView
         }
     }
 
+    public List<TodoListItem> getItems() {
+        return items;
+    }
 
-
-
+    public void setItems(List<TodoListItem> items) {
+        this.items = items;
+        notifyDataSetChanged();
+    }
 }

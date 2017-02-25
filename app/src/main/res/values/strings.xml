@@ -2,4 +2,12 @@
     <string name="app_name">SdaCourseApplication</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="clear">Clear</string>
+    <string name="checked_items">%d Elements</string>
+
+    <plurals name="checked_items_plural">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+
+    </plurals>
 </resources>
