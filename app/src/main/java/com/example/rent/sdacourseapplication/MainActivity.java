@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.rent.sdacourseapplication.drawing.DrawingActivity;
 import com.example.rent.sdacourseapplication.flaga.FlagaActivity;
 import com.example.rent.sdacourseapplication.game.GameActivity;
+import com.example.rent.sdacourseapplication.milionerzy.QuizActivity;
 import com.example.rent.sdacourseapplication.todo.ToDoListActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -67,6 +68,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (MainActivity.this, ToDoListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView textView5 = (TextView) findViewById(R.id.milionerzy_button);
+        textView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this, QuizActivity.class);
                 startActivity(intent);
             }
         });

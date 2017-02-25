@@ -26,6 +26,10 @@ public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.MyView
 
     private OnItemCheckStateChanged checkListener;
 
+    public TodoListAdapter() {
+
+    }
+
     public void setCheckListener(OnItemCheckStateChanged checkListener) {
         this.checkListener = checkListener;
     }
