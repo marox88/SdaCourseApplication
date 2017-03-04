@@ -25,10 +25,12 @@
             android:label="GALERIA" />
         <activity
             android:name=".todo.ToDoListActivity"
-            android:label="LISTA ZAKUPÓW"></activity>
-        <activity android:name=".milionerzy.QuizActivity"
-            android:label="MILIONERZY"></activity>
-
+            android:label="LISTA ZAKUPÓW" />
+        <activity
+            android:name=".milionerzy.QuizActivity"
+            android:label="MILIONERZY" />
+        <activity android:name=".Books.BooksActivity" />
+        <activity android:name=".fortune.FortuneActivity"></activity>
     </application>
 
 </manifest>
